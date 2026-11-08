@@ -23,6 +23,6 @@ jobs:
         run: |
           git config user.name "laddkollen-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/bensin.json
+          git add data/bensin.json data/koordinater.json
           git diff --cached --quiet || git commit -m "Bensinpris $(date +%F)"
           git push

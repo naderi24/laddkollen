@@ -1,59 +1,504 @@
 {
- "uppdaterad": "2026-11-08T20:08+00:00",
+ "uppdaterad": "2026-11-08T20:16+00:00",
  "kalla": "bensinpriser.nu",
  "drivmedel": "95 (E10)",
- "ort": "Norrköping",
+ "orter": [
+  "Norrköping",
+  "Finspång"
+ ],
  "snitt": 15.64,
  "median": 15.64,
  "lagst": {
+  "id": "/station/ostergotlands-lan/norrkoping/lindovagen-55",
   "kedja": "Ingo",
   "adress": "Lindövägen 55",
+  "ort": "Norrköping",
+  "pris": 15.64,
   "datum": "8/11-26",
-  "pris": 15.64
+  "lat": 58.591233333333,
+  "lng": 16.215616666667
  },
- "antal": 7,
+ "antal": 8,
  "stationer": [
   {
+   "id": "/station/ostergotlands-lan/finspang/ostermalmsvagen-25",
+   "kedja": "St1",
+   "adress": "Östermalmsvägen 25",
+   "ort": "Finspång",
+   "pris": 15.64,
+   "datum": "8/11-26",
+   "lat": 58.710633333333,
+   "lng": 15.787633333333
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/lindovagen-55",
    "kedja": "Ingo",
    "adress": "Lindövägen 55",
+   "ort": "Norrköping",
+   "pris": 15.64,
    "datum": "8/11-26",
-   "pris": 15.64
+   "lat": 58.591233333333,
+   "lng": 16.215616666667
   },
   {
+   "id": "/station/ostergotlands-lan/norrkoping/koppargatan-11",
    "kedja": "St1",
    "adress": "Koppargatan 11",
+   "ort": "Norrköping",
+   "pris": 15.64,
    "datum": "8/11-26",
-   "pris": 15.64
+   "lat": 58.61615,
+   "lng": 16.155533333333
   },
   {
+   "id": "/station/ostergotlands-lan/norrkoping/bergslagsvagen-18-skarblacka",
    "kedja": "St1",
    "adress": "Bergslagsvägen 18 / Skärblacka",
+   "ort": "Norrköping",
+   "pris": 15.64,
    "datum": "8/11-26",
-   "pris": 15.64
+   "lat": 58.5814,
+   "lng": 15.9245
   },
   {
+   "id": "/station/ostergotlands-lan/norrkoping/stockholmsvagen-34",
    "kedja": "St1",
    "adress": "Stockholmsvägen 34",
+   "ort": "Norrköping",
+   "pris": 15.64,
    "datum": "8/11-26",
-   "pris": 15.64
+   "lat": 58.5982644,
+   "lng": 16.1699515
   },
   {
+   "id": "/station/ostergotlands-lan/norrkoping/bergslagsvagen-20-skarblacka",
    "kedja": "St1",
    "adress": "Bergslagsvägen 20, Skärblacka",
+   "ort": "Norrköping",
+   "pris": 15.64,
    "datum": "8/11-26",
-   "pris": 15.64
+   "lat": 58.5814,
+   "lng": 15.9245
   },
   {
+   "id": "/station/ostergotlands-lan/norrkoping/hagagatan-10-norrkoping",
    "kedja": "St1",
    "adress": "Hagagatan 10, Norrköping",
+   "ort": "Norrköping",
+   "pris": 15.64,
    "datum": "8/11-26",
-   "pris": 15.64
+   "lat": 58.595655,
+   "lng": 16.156304
   },
   {
+   "id": "/station/ostergotlands-lan/norrkoping/boktryckaregatan-2-norrkoping",
    "kedja": "St1",
    "adress": "Boktryckaregatan 2, Norrköping",
+   "ort": "Norrköping",
+   "pris": 15.64,
    "datum": "8/11-26",
-   "pris": 15.64
+   "lat": 58.605689,
+   "lng": 16.174769
+  },
+  {
+   "id": "/station/ostergotlands-lan/finspang/hallestad",
+   "kedja": "din-X",
+   "adress": "Hällestad",
+   "ort": "Finspång",
+   "pris": null,
+   "datum": "",
+   "lat": 58.740062,
+   "lng": 15.5748722
+  },
+  {
+   "id": "/station/ostergotlands-lan/finspang/glasbruksvagen-36-rejmyre",
+   "kedja": "Qstar",
+   "adress": "Glasbruksvägen 36 / Rejmyre",
+   "ort": "Finspång",
+   "pris": null,
+   "datum": "",
+   "lat": 58.82995,
+   "lng": 15.9298
+  },
+  {
+   "id": "/station/ostergotlands-lan/finspang/bergslagsvagen-77",
+   "kedja": "Preem",
+   "adress": "Bergslagsvägen 77",
+   "ort": "Finspång",
+   "pris": null,
+   "datum": "",
+   "lat": 58.70942,
+   "lng": 15.75042
+  },
+  {
+   "id": "/station/ostergotlands-lan/finspang/norrkopingsvagen-26",
+   "kedja": "OKQ8",
+   "adress": "Norrköpingsvägen 26",
+   "ort": "Finspång",
+   "pris": null,
+   "datum": "",
+   "lat": 58.7035988,
+   "lng": 15.7970854
+  },
+  {
+   "id": "/station/ostergotlands-lan/finspang/norrkopingsutfarten",
+   "kedja": "Circle K",
+   "adress": "Leverstorpsvägen 2, 612 44 Finspång",
+   "ort": "Finspång",
+   "pris": null,
+   "datum": "",
+   "lat": 58.7060686,
+   "lng": 15.7675541
+  },
+  {
+   "id": "/station/ostergotlands-lan/finspang/norrkopingsvagen-28",
+   "kedja": "Tanka",
+   "adress": "Norrköpingsvägen 28",
+   "ort": "Finspång",
+   "pris": null,
+   "datum": "",
+   "lat": 58.7037711,
+   "lng": 15.794534
+  },
+  {
+   "id": "/station/ostergotlands-lan/finspang/skaggebyvagen-50",
+   "kedja": "Qstar",
+   "adress": "Skäggebyvägen 50",
+   "ort": "Finspång",
+   "pris": null,
+   "datum": "",
+   "lat": 58.6998905,
+   "lng": 15.8178193
+  },
+  {
+   "id": "/station/ostergotlands-lan/finspang/igelfors-sverige",
+   "kedja": "Qstar",
+   "adress": "Igelfors sverige",
+   "ort": "Finspång",
+   "pris": null,
+   "datum": "",
+   "lat": 58.8462607,
+   "lng": 15.6985453
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/vagngatan-16",
+   "kedja": "Ingo",
+   "adress": "Vagngatan 16",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.57847,
+   "lng": 16.16161
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/exportgatan-9",
+   "kedja": "Tanka",
+   "adress": "Exportgatan 9",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.5884049,
+   "lng": 16.2166991
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/moa-martinsons-gata-6",
+   "kedja": "OKQ8",
+   "adress": "Moa Martinsons Gata 6",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.5811044,
+   "lng": 16.1344103
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/spargatan-3",
+   "kedja": "Preem",
+   "adress": "Spårgatan 3",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.602366666667,
+   "lng": 16.187383333333
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/hagebygatan-241",
+   "kedja": "OKQ8",
+   "adress": "Hagebygatan 241",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.5673261,
+   "lng": 16.2149936
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/skarphagsleden",
+   "kedja": "OKQ8",
+   "adress": "Skarphagsleden/vagngatan 25",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.5781547,
+   "lng": 16.1600116
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/trafikplats-klinga",
+   "kedja": "OKQ8",
+   "adress": "Trafikplats Klinga",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.5683864,
+   "lng": 16.0791988
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/stockholmsvagen-72",
+   "kedja": "OKQ8",
+   "adress": "Stockholmsvägen 72",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.6016933,
+   "lng": 16.1667682
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/de-geersgatan-97",
+   "kedja": "Ingo",
+   "adress": "Kompanigatan 3",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.606958,
+   "lng": 16.138713
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/fjarilsgatan-23",
+   "kedja": "Circle K",
+   "adress": "Fjärilsgatan 23",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.5799569,
+   "lng": 16.2232641
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/gamla-ovagen",
+   "kedja": "Circle K",
+   "adress": "Gamla Övägen",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.5615555,
+   "lng": 16.1776521
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/jarngatan-15",
+   "kedja": "Circle K",
+   "adress": "Järngatan 15",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.6177331,
+   "lng": 16.1618088
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/norra-promenaden-117",
+   "kedja": "Circle K",
+   "adress": "Norra Promenaden 117",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.5951865,
+   "lng": 16.1804272
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/aby-nykopingsvagen-14",
+   "kedja": "Qstar",
+   "adress": "Åby: Nyköpingsvägen 14",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.663316666667,
+   "lng": 16.180266666667
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/stockholmsvagen-78",
+   "kedja": "Circle K",
+   "adress": "Stockholmsvägen 78",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.602433333333,
+   "lng": 16.166683333333
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/norsholm",
+   "kedja": "Circle K",
+   "adress": "Bäckeby 1, Norsholm",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.490917211854,
+   "lng": 15.95079468225
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/smedbygatan",
+   "kedja": "Qstar",
+   "adress": "Smedbygatan",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.969216666667,
+   "lng": 16.370666666667
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/spargatan-5",
+   "kedja": "Qstar",
+   "adress": "Spårgatan 5",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.6035311,
+   "lng": 16.1873328
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/koppargatan-2a",
+   "kedja": "Preem",
+   "adress": "Koppargatan 2A",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.61193,
+   "lng": 16.158442
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/spargatan",
+   "kedja": "Preem",
+   "adress": "Spårgatan",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 59.6530112,
+   "lng": 12.5889246
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/degergatan",
+   "kedja": "Circle K",
+   "adress": "Degergatan",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 56.0624423,
+   "lng": 12.6825946
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/moa-martinssons-gata-14",
+   "kedja": "Övriga",
+   "adress": "Moa Martinssons gata 14",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.580083333333,
+   "lng": 16.12935
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/bygdevagen-7",
+   "kedja": "Qstar",
+   "adress": "bygdevägen 7",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 59.4301449,
+   "lng": 17.9490691
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/lidaleden-16-hagaby-centrum",
+   "kedja": "Ingo",
+   "adress": "Lidaleden 16 / Hageby Centrum",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.573675,
+   "lng": 16.212808
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/svartinge-finspangsvagen-484",
+   "kedja": "Smart Energy",
+   "adress": "Svärtinge: Finspångsvägen 484",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.646416666667,
+   "lng": 16.05345
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/koppargatan-1-blygatan",
+   "kedja": "Ingo",
+   "adress": "Koppargatan 1 / Blygatan",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.613903,
+   "lng": 16.1711127
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/simonstorp",
+   "kedja": "Qstar",
+   "adress": "Simonstorp",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.788332,
+   "lng": 16.1575091
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/vikbolandet-bygdevagen-7",
+   "kedja": "Qstar",
+   "adress": "Vikbolandet: Bygdevägen 7",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.575965,
+   "lng": 16.567382
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/vikbolandet-bjorno-marina",
+   "kedja": "Qstar",
+   "adress": "Vikbolandet: Björnö Marina",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.90488,
+   "lng": 17.392813333333
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/hanholmsvagen-69",
+   "kedja": "LT Lantmän",
+   "adress": "Hanholmsvägen 69 / Agro Cleanpower E85",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.612216,
+   "lng": 16.230204
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/arkosundsvagen-vag-209",
+   "kedja": "Qstar",
+   "adress": "Arkösundsvägen / Väg 209",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.58143683178,
+   "lng": 16.2224955
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/norrkoping-norrkoping",
+   "kedja": "Gulf",
+   "adress": "Norrköping",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.649235,
+   "lng": 16.172014
   }
  ],
  "historik": [
