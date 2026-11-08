@@ -1,0 +1,65 @@
+{
+ "uppdaterad": "2026-11-08T20:01+00:00",
+ "kalla": "bensinpriser.nu",
+ "drivmedel": "95 (E10)",
+ "ort": "Norrköping",
+ "snitt": 15.64,
+ "median": 15.64,
+ "lagst": {
+  "kedja": "Ingo",
+  "adress": "Lindövägen 55",
+  "datum": "8/11-26",
+  "pris": 15.64
+ },
+ "antal": 7,
+ "stationer": [
+  {
+   "kedja": "Ingo",
+   "adress": "Lindövägen 55",
+   "datum": "8/11-26",
+   "pris": 15.64
+  },
+  {
+   "kedja": "St1",
+   "adress": "Koppargatan 11",
+   "datum": "8/11-26",
+   "pris": 15.64
+  },
+  {
+   "kedja": "St1",
+   "adress": "Bergslagsvägen 18 / Skärblacka",
+   "datum": "8/11-26",
+   "pris": 15.64
+  },
+  {
+   "kedja": "St1",
+   "adress": "Stockholmsvägen 34",
+   "datum": "8/11-26",
+   "pris": 15.64
+  },
+  {
+   "kedja": "St1",
+   "adress": "Bergslagsvägen 20, Skärblacka",
+   "datum": "8/11-26",
+   "pris": 15.64
+  },
+  {
+   "kedja": "St1",
+   "adress": "Hagagatan 10, Norrköping",
+   "datum": "8/11-26",
+   "pris": 15.64
+  },
+  {
+   "kedja": "St1",
+   "adress": "Boktryckaregatan 2, Norrköping",
+   "datum": "8/11-26",
+   "pris": 15.64
+  }
+ ],
+ "historik": [
+  {
+   "datum": "2026-11-08",
+   "snitt": 15.64
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+name: Hämta bensinpris
+
+on:
+  schedule:
+    - cron: "15 5 * * *"   # 06:15 / 07:15 svensk tid
+    - cron: "15 15 * * *"  # 16:15 / 17:15 svensk tid
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Hämta priser
+        run: python3 tools/fetch_bensin.py
+      - name: Spara om något ändrats
+        run: |
+          git config user.name "laddkollen-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/bensin.json
+          git diff --cached --quiet || git commit -m "Bensinpris $(date +%F)"
+          git push
