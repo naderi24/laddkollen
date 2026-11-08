@@ -121,11 +121,10 @@ const PUMP = `<svg class="ic" viewBox="0 0 24 24"><path d="M4 21V5a2 2 0 0 1 2-2
 const PIN_SVG = `<svg class="ic" viewBox="0 0 24 24"><path d="M5 20V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14M4 20h12M8 9h4"/><path d="M15 11h1.5a1.5 1.5 0 0 1 1.5 1.5v3a1 1 0 0 0 2 0V9l-2-2"/></svg>`;
 
 function tiles() {
-  const esri = (n) => `https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/${n}/MapServer/tile/{z}/{y}/{x}`;
-  return [
-    L.tileLayer(esri("World_Dark_Gray_Base"), { maxZoom: 16, attribution: "Esri, HERE, Garmin, © OpenStreetMap" }),
-    L.tileLayer(esri("World_Dark_Gray_Reference"), { maxZoom: 16 }),
-  ];
+  // OpenStreetMap ger detaljer ända ner till gatunivå (zoom 19); mörkläggs med CSS-filter på kartlagret
+  return [L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  })];
 }
 function pinIcon(s, best, label = true) {
   return L.divIcon({ className: "", iconSize: [0, 0],
@@ -156,7 +155,7 @@ let map = null, layer = null, ortFilter = "";
 function renderMap() {
   if (!window.L || !fuel || $("v-karta").hidden) return;
   if (!map) {
-    map = L.map("map", { zoomControl: true, scrollWheelZoom: false });
+    map = L.map("map", { zoomControl: true, scrollWheelZoom: false, maxZoom: 19 });
     tiles().forEach((t) => t.addTo(map));
     layer = L.layerGroup().addTo(map);
   }
@@ -186,9 +185,9 @@ function renderFuelList() {
   if (fuel) {
     const list = priced(ortFilter);
     html += list.slice(0, 8).map((s) => `
-      <div class="st${s.pris === list[0].pris ? " top" : ""}"><span class="chipi">${PUMP}</span>
+      <button class="st${s.pris === list[0].pris ? " top" : ""}" data-lat="${s.lat}" data-lng="${s.lng}"><span class="chipi">${PUMP}</span>
         <span class="t"><b>${s.kedja}, ${s.ort}</b><span>${s.adress.split(",")[0]} · ${s.datum}</span></span>
-        <span class="p">${kr(s.pris)}<small>kr</small></span></div>`).join("")
+        <span class="p">${kr(s.pris)}<small>kr</small></span></button>`).join("")
       || `<div class="st"><span class="t"><b>Inga aktuella priser</b><span>Ingen har rapporterat ett pris de senaste dagarna</span></span></div>`;
   } else if (!html) html = `<div class="st"><span class="t"><b>Kunde inte hämta priser</b><span>Ange eget pris under Inställningar</span></span></div>`;
   $("fuelList").innerHTML = html;
@@ -273,8 +272,24 @@ async function renderInfo() {
       c2("Laddtid", kr(R.wallKWh / S.effekt, 1), "tim", `vid ${kr(S.effekt, 1)} kW`);
   }
   const today = startOfDay(new Date());
-  const p = await dayPrices(addDays(today, dayIdx));
+  // Dagkort: tre dagar bakåt, idag och imorgon (när priset släppts)
+  const offs = [-3, -2, -1, 0, 1];
+  const days = await Promise.all(offs.map((o) => dayPrices(addDays(today, o))));
+  const avgs = days.map((p) => (p ? hourly(p).reduce((a, x) => a + x.pris, 0) / hourly(p).length : null));
+  const known = avgs.filter((x) => x != null);
+  const amax = Math.max(...known, 0.01), amin = Math.min(...known, amax) * 0.75;
+  $("days").innerHTML = offs.map((o, i) => {
+    const d = addDays(today, o);
+    const name = o === 0 ? "Idag" : o === 1 ? "Imorgon" : o === -1 ? "Igår" : d.toLocaleDateString("sv-SE", { weekday: "short" }).replace(".", "");
+    const a = avgs[i];
+    return `<button class="day" data-d="${o}" aria-pressed="${o === dayIdx}" ${a == null ? "disabled" : ""}>
+      <span class="dn">${name}</span><span class="dd">${d.getDate()}/${d.getMonth() + 1}</span>
+      <span class="db"><i style="height:${a == null ? 0 : Math.max(10, ((a - amin) / (amax - amin || 1)) * 100)}%"></i></span>
+      <span class="da">${a == null ? "kl. 13" : kr(a)}</span></button>`;
+  }).join("");
+  const p = days[offs.indexOf(dayIdx)];
   const h = p ? hourly(p) : null;
+  $("dayTitle").textContent = addDays(today, dayIdx).toLocaleDateString("sv-SE", { weekday: "long", day: "numeric", month: "long" }).replace(/^./, (c) => c.toUpperCase());
   bars($("dayBars"), $("dayAxis"), h);
   if (h) {
     const lo = h.reduce((x, y) => (y.pris < x.pris ? y : x));
@@ -358,10 +373,17 @@ document.addEventListener("click", (e) => {
     document.querySelectorAll("#ortSeg button").forEach((x) => x.setAttribute("aria-pressed", x === o));
     renderFuelList(); renderMap();
   }
-  const d = e.target.closest("#daySeg button");
-  if (d) {
+  const st = e.target.closest("#fuelList .st[data-lat]");
+  if (st && map && inArea({ lat: +st.dataset.lat, lng: +st.dataset.lng })) {
+    $("map").scrollIntoView({ behavior: "smooth", block: "center" });
+    const ll = [+st.dataset.lat, +st.dataset.lng];
+    map.flyTo(ll, 17, { duration: 1.2 });
+    setTimeout(() => { if (map.getZoom() !== 17) map.setView(ll, 17, { animate: false }); }, 1800);
+  }
+  const d = e.target.closest("#days .day");
+  if (d && !d.disabled) {
     dayIdx = +d.dataset.d;
-    document.querySelectorAll("#daySeg button").forEach((x) => x.setAttribute("aria-pressed", x === d));
+    document.querySelectorAll("#days .day").forEach((x) => x.setAttribute("aria-pressed", x === d));
     renderInfo();
   }
 });

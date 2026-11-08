@@ -171,7 +171,7 @@ h1,h2,p{margin:0}
 .seg button{flex:1;min-height:36px;border-radius:11px;font-size:14px;font-weight:500;color:var(--muted);text-align:center}
 .seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
 .bigmap{height:min(48vh,400px);border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#191c1e}
-.st{display:flex;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.st{display:flex;align-items:center;gap:14px;width:100%;padding:14px 0;border-top:1px solid var(--line)}
 .st:first-child{border-top:0;padding-top:2px}
 .st .chipi{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--card-3);color:var(--ink-2);flex:none}
 .st .chipi svg{width:17px;height:17px}
@@ -183,7 +183,24 @@ h1,h2,p{margin:0}
 .st .p small{font:400 10.5px var(--mono);color:var(--muted);margin-left:2px;letter-spacing:0}
 .st.top .p{color:var(--fuel)}
 
+/* day cards */
+.days{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-bottom:16px}
+.day{display:flex;flex-direction:column;align-items:center;gap:3px;padding:10px 2px 9px;border-radius:14px;background:var(--card-2);border:1px solid var(--line);text-align:center}
+.day .dn{font-size:13px;font-weight:500;text-transform:capitalize}
+.day .dd{font:400 10px var(--mono);color:var(--muted)}
+.day .db{display:flex;align-items:flex-end;width:14px;height:34px;margin:4px 0 2px;border-radius:4px;background:rgba(255,255,255,.06);overflow:hidden}
+.day .db i{display:block;width:100%;border-radius:4px;background:var(--muted);transition:height .6s var(--spring)}
+.day .da{font:500 11.5px var(--mono);letter-spacing:-.02em}
+.day[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:transparent}
+.day[aria-pressed=true] .dd{color:rgba(16,18,19,.6)}
+.day[aria-pressed=true] .db{background:rgba(16,18,19,.12)}
+.day[aria-pressed=true] .db i{background:var(--bg)}
+.day:disabled{opacity:.45;cursor:default}
+.day:disabled .da{color:var(--muted)}
+.dtitle{font-size:14px;color:var(--ink-2);margin:0 0 12px}
+
 /* map */
+.leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) grayscale(.85) brightness(.82) contrast(.92)}
 .leaflet-container{font-family:var(--display);background:#191c1e}
 .leaflet-control-attribution{font:400 9px var(--mono)!important;background:rgba(16,18,19,.6)!important;color:var(--faint)!important}
 .leaflet-control-attribution a{color:var(--muted)!important}
@@ -298,7 +315,7 @@ details.set[open] summary::after{transform:rotate(45deg)}
       <div class="bigmap anim d2" id="map"></div>
       <section class="card pad anim d3" id="fuelList"></section>
     </div>
-    <p class="fine">Priserna rapporteras av förare och stationer på bensinpriser.nu och hämtas två gånger om dagen. Grå prickar på kartan saknar aktuellt pris. Karta: Esri, © OpenStreetMap.</p>
+    <p class="fine">Priserna rapporteras av förare och stationer på bensinpriser.nu och hämtas två gånger om dagen. Grå prickar på kartan saknar aktuellt pris. Karta © OpenStreetMap.</p>
   </main>
 
   <!-- MER INFO -->
@@ -319,8 +336,9 @@ details.set[open] summary::after{transform:rotate(45deg)}
       <div class="duo anim d3" id="fullTiles"></div>
 
       <section class="card pad anim d4">
-        <div class="sh"><h2>Elpris dygnet runt</h2><span class="eyebrow">allt inräknat</span></div>
-        <div class="seg" id="daySeg"><button aria-pressed="true" data-d="0">Idag</button><button aria-pressed="false" data-d="1">Imorgon</button></div>
+        <div class="sh"><h2>Elpris dag för dag</h2><span class="eyebrow">snitt · kr/kWh</span></div>
+        <div class="days" id="days"></div>
+        <div class="dtitle" id="dayTitle"></div>
         <div class="bars" id="dayBars"></div>
         <div class="axis" id="dayAxis"></div>
         <div class="rows" id="dayRows" style="margin-top:10px"></div>
@@ -348,6 +366,6 @@ details.set[open] summary::after{transform:rotate(45deg)}
 </div></nav>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="app.js?v=9"></script>
+<script src="app.js?v=11"></script>
 </body>
 </html>
