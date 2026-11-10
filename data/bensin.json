@@ -1,5 +1,5 @@
 {
- "uppdaterad": "2026-11-09T23:47+00:00",
+ "uppdaterad": "2026-11-10T13:27+00:00",
  "kalla": "bensinpriser.nu",
  "drivmedel": "95 (E10)",
  "orter": [
@@ -18,7 +18,7 @@
   "lat": 58.591233333333,
   "lng": 16.215616666667
  },
- "antal": 8,
+ "antal": 9,
  "stationer": [
   {
    "id": "/station/ostergotlands-lan/norrkoping/lindovagen-55",
@@ -101,6 +101,16 @@
    "lng": 16.174769
   },
   {
+   "id": "/station/ostergotlands-lan/finspang/bergslagsvagen-77",
+   "kedja": "Preem",
+   "adress": "Bergslagsvägen 77",
+   "ort": "Finspång",
+   "pris": 15.75,
+   "datum": "10/11-26",
+   "lat": 58.70942,
+   "lng": 15.75042
+  },
+  {
    "id": "/station/ostergotlands-lan/finspang/hallestad",
    "kedja": "din-X",
    "adress": "Hällestad",
@@ -119,16 +129,6 @@
    "datum": "",
    "lat": 58.82995,
    "lng": 15.9298
-  },
-  {
-   "id": "/station/ostergotlands-lan/finspang/bergslagsvagen-77",
-   "kedja": "Preem",
-   "adress": "Bergslagsvägen 77",
-   "ort": "Finspång",
-   "pris": null,
-   "datum": "",
-   "lat": 58.70942,
-   "lng": 15.75042
   },
   {
    "id": "/station/ostergotlands-lan/finspang/norrkopingsvagen-26",
@@ -508,6 +508,10 @@
   },
   {
    "datum": "2026-11-09",
+   "snitt": 15.73
+  },
+  {
+   "datum": "2026-11-10",
    "snitt": 15.73
   }
  ]
