@@ -1,5 +1,5 @@
 {
- "uppdaterad": "2026-11-13T21:27+00:00",
+ "uppdaterad": "2026-11-14T12:09+00:00",
  "kalla": "bensinpriser.nu",
  "drivmedel": "95 (E10)",
  "orter": [
@@ -14,7 +14,7 @@
   "adress": "Koppargatan 11",
   "ort": "Norrköping",
   "pris": 15.49,
-  "datum": "13/11-26",
+  "datum": "14/11-26",
   "lat": 58.61615,
   "lng": 16.155533333333
  },
@@ -26,7 +26,7 @@
    "adress": "Östermalmsvägen 25",
    "ort": "Finspång",
    "pris": 15.49,
-   "datum": "13/11-26",
+   "datum": "14/11-26",
    "lat": 58.710633333333,
    "lng": 15.787633333333
   },
@@ -36,7 +36,7 @@
    "adress": "Koppargatan 11",
    "ort": "Norrköping",
    "pris": 15.49,
-   "datum": "13/11-26",
+   "datum": "14/11-26",
    "lat": 58.61615,
    "lng": 16.155533333333
   },
@@ -46,7 +46,7 @@
    "adress": "Bergslagsvägen 18 / Skärblacka",
    "ort": "Norrköping",
    "pris": 15.49,
-   "datum": "13/11-26",
+   "datum": "14/11-26",
    "lat": 58.5814,
    "lng": 15.9245
   },
@@ -56,7 +56,7 @@
    "adress": "Stockholmsvägen 34",
    "ort": "Norrköping",
    "pris": 15.49,
-   "datum": "13/11-26",
+   "datum": "14/11-26",
    "lat": 58.5982644,
    "lng": 16.1699515
   },
@@ -66,7 +66,7 @@
    "adress": "Bergslagsvägen 20, Skärblacka",
    "ort": "Norrköping",
    "pris": 15.49,
-   "datum": "13/11-26",
+   "datum": "14/11-26",
    "lat": 58.5814,
    "lng": 15.9245
   },
@@ -76,7 +76,7 @@
    "adress": "Hagagatan 10, Norrköping",
    "ort": "Norrköping",
    "pris": 15.49,
-   "datum": "13/11-26",
+   "datum": "14/11-26",
    "lat": 58.595655,
    "lng": 16.156304
   },
@@ -86,7 +86,7 @@
    "adress": "Boktryckaregatan 2, Norrköping",
    "ort": "Norrköping",
    "pris": 15.49,
-   "datum": "13/11-26",
+   "datum": "14/11-26",
    "lat": 58.605689,
    "lng": 16.174769
   },
@@ -524,6 +524,10 @@
   },
   {
    "datum": "2026-11-13",
+   "snitt": 15.49
+  },
+  {
+   "datum": "2026-11-14",
    "snitt": 15.49
   }
  ]
