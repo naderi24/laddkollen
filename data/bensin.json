@@ -1,35 +1,25 @@
 {
- "uppdaterad": "2026-11-18T13:56+00:00",
+ "uppdaterad": "2026-11-18T22:36+00:00",
  "kalla": "bensinpriser.nu",
  "drivmedel": "95 (E10)",
  "orter": [
   "Norrköping",
   "Finspång"
  ],
- "snitt": 15.26,
+ "snitt": 15.29,
  "median": 15.29,
  "lagst": {
-  "id": "/station/ostergotlands-lan/norrkoping/simonstorp",
-  "kedja": "Qstar",
-  "adress": "Simonstorp",
+  "id": "/station/ostergotlands-lan/norrkoping/koppargatan-11",
+  "kedja": "St1",
+  "adress": "Koppargatan 11",
   "ort": "Norrköping",
-  "pris": 15.09,
-  "datum": "15/11-26",
-  "lat": 58.788332,
-  "lng": 16.1575091
+  "pris": 15.29,
+  "datum": "18/11-26",
+  "lat": 58.61615,
+  "lng": 16.155533333333
  },
- "antal": 8,
+ "antal": 7,
  "stationer": [
-  {
-   "id": "/station/ostergotlands-lan/norrkoping/simonstorp",
-   "kedja": "Qstar",
-   "adress": "Simonstorp",
-   "ort": "Norrköping",
-   "pris": 15.09,
-   "datum": "15/11-26",
-   "lat": 58.788332,
-   "lng": 16.1575091
-  },
   {
    "id": "/station/ostergotlands-lan/finspang/ostermalmsvagen-25",
    "kedja": "St1",
@@ -451,6 +441,16 @@
    "lng": 16.1711127
   },
   {
+   "id": "/station/ostergotlands-lan/norrkoping/simonstorp",
+   "kedja": "Qstar",
+   "adress": "Simonstorp",
+   "ort": "Norrköping",
+   "pris": null,
+   "datum": "",
+   "lat": 58.788332,
+   "lng": 16.1575091
+  },
+  {
    "id": "/station/ostergotlands-lan/norrkoping/vikbolandet-bygdevagen-7",
    "kedja": "Qstar",
    "adress": "Vikbolandet: Bygdevägen 7",
@@ -544,7 +544,7 @@
   },
   {
    "datum": "2026-11-18",
-   "snitt": 15.26
+   "snitt": 15.29
   }
  ]
 }
