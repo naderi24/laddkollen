@@ -1,20 +1,20 @@
 {
- "uppdaterad": "2026-11-19T22:40+00:00",
+ "uppdaterad": "2026-11-20T13:59+00:00",
  "kalla": "bensinpriser.nu",
  "drivmedel": "95 (E10)",
  "orter": [
   "Norrköping",
   "Finspång"
  ],
- "snitt": 15.04,
- "median": 15.04,
+ "snitt": 15.14,
+ "median": 15.14,
  "lagst": {
   "id": "/station/ostergotlands-lan/norrkoping/koppargatan-11",
   "kedja": "St1",
   "adress": "Koppargatan 11",
   "ort": "Norrköping",
-  "pris": 15.04,
-  "datum": "19/11-26",
+  "pris": 15.14,
+  "datum": "20/11-26",
   "lat": 58.61615,
   "lng": 16.155533333333
  },
@@ -25,8 +25,8 @@
    "kedja": "St1",
    "adress": "Östermalmsvägen 25",
    "ort": "Finspång",
-   "pris": 15.04,
-   "datum": "19/11-26",
+   "pris": 15.14,
+   "datum": "20/11-26",
    "lat": 58.710633333333,
    "lng": 15.787633333333
   },
@@ -35,8 +35,8 @@
    "kedja": "St1",
    "adress": "Koppargatan 11",
    "ort": "Norrköping",
-   "pris": 15.04,
-   "datum": "19/11-26",
+   "pris": 15.14,
+   "datum": "20/11-26",
    "lat": 58.61615,
    "lng": 16.155533333333
   },
@@ -45,8 +45,8 @@
    "kedja": "St1",
    "adress": "Bergslagsvägen 18 / Skärblacka",
    "ort": "Norrköping",
-   "pris": 15.04,
-   "datum": "19/11-26",
+   "pris": 15.14,
+   "datum": "20/11-26",
    "lat": 58.5814,
    "lng": 15.9245
   },
@@ -55,8 +55,8 @@
    "kedja": "St1",
    "adress": "Stockholmsvägen 34",
    "ort": "Norrköping",
-   "pris": 15.04,
-   "datum": "19/11-26",
+   "pris": 15.14,
+   "datum": "20/11-26",
    "lat": 58.5982644,
    "lng": 16.1699515
   },
@@ -65,8 +65,8 @@
    "kedja": "St1",
    "adress": "Bergslagsvägen 20, Skärblacka",
    "ort": "Norrköping",
-   "pris": 15.04,
-   "datum": "19/11-26",
+   "pris": 15.14,
+   "datum": "20/11-26",
    "lat": 58.5814,
    "lng": 15.9245
   },
@@ -75,8 +75,8 @@
    "kedja": "St1",
    "adress": "Hagagatan 10, Norrköping",
    "ort": "Norrköping",
-   "pris": 15.04,
-   "datum": "19/11-26",
+   "pris": 15.14,
+   "datum": "20/11-26",
    "lat": 58.595655,
    "lng": 16.156304
   },
@@ -85,8 +85,8 @@
    "kedja": "St1",
    "adress": "Boktryckaregatan 2, Norrköping",
    "ort": "Norrköping",
-   "pris": 15.04,
-   "datum": "19/11-26",
+   "pris": 15.14,
+   "datum": "20/11-26",
    "lat": 58.605689,
    "lng": 16.174769
   },
@@ -549,6 +549,10 @@
   {
    "datum": "2026-11-19",
    "snitt": 15.04
+  },
+  {
+   "datum": "2026-11-20",
+   "snitt": 15.14
   }
  ]
 }
