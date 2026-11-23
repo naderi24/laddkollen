@@ -1,82 +1,32 @@
 {
- "uppdaterad": "2026-11-22T21:04+00:00",
+ "uppdaterad": "2026-11-23T15:56+00:00",
  "kalla": "bensinpriser.nu",
  "drivmedel": "95 (E10)",
  "orter": [
   "Norrköping",
   "Finspång"
  ],
- "snitt": 15.08,
- "median": 15.04,
+ "snitt": 15.17,
+ "median": 15.24,
  "lagst": {
-  "id": "/station/ostergotlands-lan/norrkoping/koppargatan-11",
+  "id": "/station/ostergotlands-lan/norrkoping/bergslagsvagen-18-skarblacka",
   "kedja": "St1",
-  "adress": "Koppargatan 11",
+  "adress": "Bergslagsvägen 18 / Skärblacka",
   "ort": "Norrköping",
-  "pris": 15.04,
-  "datum": "22/11-26",
-  "lat": 58.61615,
-  "lng": 16.155533333333
+  "pris": 14.99,
+  "datum": "23/11-26",
+  "lat": 58.5814,
+  "lng": 15.9245
  },
  "antal": 7,
  "stationer": [
-  {
-   "id": "/station/ostergotlands-lan/norrkoping/koppargatan-11",
-   "kedja": "St1",
-   "adress": "Koppargatan 11",
-   "ort": "Norrköping",
-   "pris": 15.04,
-   "datum": "22/11-26",
-   "lat": 58.61615,
-   "lng": 16.155533333333
-  },
-  {
-   "id": "/station/ostergotlands-lan/norrkoping/stockholmsvagen-34",
-   "kedja": "St1",
-   "adress": "Stockholmsvägen 34",
-   "ort": "Norrköping",
-   "pris": 15.04,
-   "datum": "22/11-26",
-   "lat": 58.5982644,
-   "lng": 16.1699515
-  },
-  {
-   "id": "/station/ostergotlands-lan/norrkoping/hagagatan-10-norrkoping",
-   "kedja": "St1",
-   "adress": "Hagagatan 10, Norrköping",
-   "ort": "Norrköping",
-   "pris": 15.04,
-   "datum": "22/11-26",
-   "lat": 58.595655,
-   "lng": 16.156304
-  },
-  {
-   "id": "/station/ostergotlands-lan/norrkoping/boktryckaregatan-2-norrkoping",
-   "kedja": "St1",
-   "adress": "Boktryckaregatan 2, Norrköping",
-   "ort": "Norrköping",
-   "pris": 15.04,
-   "datum": "22/11-26",
-   "lat": 58.605689,
-   "lng": 16.174769
-  },
-  {
-   "id": "/station/ostergotlands-lan/finspang/ostermalmsvagen-25",
-   "kedja": "St1",
-   "adress": "Östermalmsvägen 25",
-   "ort": "Finspång",
-   "pris": 15.14,
-   "datum": "22/11-26",
-   "lat": 58.710633333333,
-   "lng": 15.787633333333
-  },
   {
    "id": "/station/ostergotlands-lan/norrkoping/bergslagsvagen-18-skarblacka",
    "kedja": "St1",
    "adress": "Bergslagsvägen 18 / Skärblacka",
    "ort": "Norrköping",
-   "pris": 15.14,
-   "datum": "22/11-26",
+   "pris": 14.99,
+   "datum": "23/11-26",
    "lat": 58.5814,
    "lng": 15.9245
   },
@@ -85,10 +35,60 @@
    "kedja": "St1",
    "adress": "Bergslagsvägen 20, Skärblacka",
    "ort": "Norrköping",
-   "pris": 15.14,
-   "datum": "22/11-26",
+   "pris": 14.99,
+   "datum": "23/11-26",
    "lat": 58.5814,
    "lng": 15.9245
+  },
+  {
+   "id": "/station/ostergotlands-lan/finspang/ostermalmsvagen-25",
+   "kedja": "St1",
+   "adress": "Östermalmsvägen 25",
+   "ort": "Finspång",
+   "pris": 15.24,
+   "datum": "23/11-26",
+   "lat": 58.710633333333,
+   "lng": 15.787633333333
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/koppargatan-11",
+   "kedja": "St1",
+   "adress": "Koppargatan 11",
+   "ort": "Norrköping",
+   "pris": 15.24,
+   "datum": "23/11-26",
+   "lat": 58.61615,
+   "lng": 16.155533333333
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/stockholmsvagen-34",
+   "kedja": "St1",
+   "adress": "Stockholmsvägen 34",
+   "ort": "Norrköping",
+   "pris": 15.24,
+   "datum": "23/11-26",
+   "lat": 58.5982644,
+   "lng": 16.1699515
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/hagagatan-10-norrkoping",
+   "kedja": "St1",
+   "adress": "Hagagatan 10, Norrköping",
+   "ort": "Norrköping",
+   "pris": 15.24,
+   "datum": "23/11-26",
+   "lat": 58.595655,
+   "lng": 16.156304
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/boktryckaregatan-2-norrkoping",
+   "kedja": "St1",
+   "adress": "Boktryckaregatan 2, Norrköping",
+   "ort": "Norrköping",
+   "pris": 15.24,
+   "datum": "23/11-26",
+   "lat": 58.605689,
+   "lng": 16.174769
   },
   {
    "id": "/station/ostergotlands-lan/finspang/hallestad",
@@ -561,6 +561,10 @@
   {
    "datum": "2026-11-22",
    "snitt": 15.08
+  },
+  {
+   "datum": "2026-11-23",
+   "snitt": 15.17
   }
  ]
 }
