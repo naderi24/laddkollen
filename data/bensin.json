@@ -1,32 +1,42 @@
 {
- "uppdaterad": "2026-11-24T15:52+00:00",
+ "uppdaterad": "2026-11-24T23:54+00:00",
  "kalla": "bensinpriser.nu",
  "drivmedel": "95 (E10)",
  "orter": [
   "Norrköping",
   "Finspång"
  ],
- "snitt": 14.82,
+ "snitt": 14.77,
  "median": 14.89,
  "lagst": {
-  "id": "/station/ostergotlands-lan/norrkoping/bergslagsvagen-18-skarblacka",
-  "kedja": "St1",
-  "adress": "Bergslagsvägen 18 / Skärblacka",
+  "id": "/station/ostergotlands-lan/norrkoping/simonstorp",
+  "kedja": "Qstar",
+  "adress": "Simonstorp",
   "ort": "Norrköping",
-  "pris": 14.69,
+  "pris": 14.29,
   "datum": "24/11-26",
-  "lat": 58.5814,
-  "lng": 15.9245
+  "lat": 58.788332,
+  "lng": 16.1575091
  },
  "antal": 8,
  "stationer": [
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/simonstorp",
+   "kedja": "Qstar",
+   "adress": "Simonstorp",
+   "ort": "Norrköping",
+   "pris": 14.29,
+   "datum": "24/11-26",
+   "lat": 58.788332,
+   "lng": 16.1575091
+  },
   {
    "id": "/station/ostergotlands-lan/norrkoping/bergslagsvagen-18-skarblacka",
    "kedja": "St1",
    "adress": "Bergslagsvägen 18 / Skärblacka",
    "ort": "Norrköping",
    "pris": 14.69,
-   "datum": "24/11-26",
+   "datum": "25/11-26",
    "lat": 58.5814,
    "lng": 15.9245
   },
@@ -36,19 +46,9 @@
    "adress": "Bergslagsvägen 20, Skärblacka",
    "ort": "Norrköping",
    "pris": 14.69,
-   "datum": "24/11-26",
+   "datum": "25/11-26",
    "lat": 58.5814,
    "lng": 15.9245
-  },
-  {
-   "id": "/station/ostergotlands-lan/norrkoping/simonstorp",
-   "kedja": "Qstar",
-   "adress": "Simonstorp",
-   "ort": "Norrköping",
-   "pris": 14.74,
-   "datum": "24/11-26",
-   "lat": 58.788332,
-   "lng": 16.1575091
   },
   {
    "id": "/station/ostergotlands-lan/finspang/ostermalmsvagen-25",
@@ -56,7 +56,7 @@
    "adress": "Östermalmsvägen 25",
    "ort": "Finspång",
    "pris": 14.89,
-   "datum": "24/11-26",
+   "datum": "25/11-26",
    "lat": 58.710633333333,
    "lng": 15.787633333333
   },
@@ -66,7 +66,7 @@
    "adress": "Koppargatan 11",
    "ort": "Norrköping",
    "pris": 14.89,
-   "datum": "24/11-26",
+   "datum": "25/11-26",
    "lat": 58.61615,
    "lng": 16.155533333333
   },
@@ -76,7 +76,7 @@
    "adress": "Stockholmsvägen 34",
    "ort": "Norrköping",
    "pris": 14.89,
-   "datum": "24/11-26",
+   "datum": "25/11-26",
    "lat": 58.5982644,
    "lng": 16.1699515
   },
@@ -86,7 +86,7 @@
    "adress": "Hagagatan 10, Norrköping",
    "ort": "Norrköping",
    "pris": 14.89,
-   "datum": "24/11-26",
+   "datum": "25/11-26",
    "lat": 58.595655,
    "lng": 16.156304
   },
@@ -96,7 +96,7 @@
    "adress": "Boktryckaregatan 2, Norrköping",
    "ort": "Norrköping",
    "pris": 14.89,
-   "datum": "24/11-26",
+   "datum": "25/11-26",
    "lat": 58.605689,
    "lng": 16.174769
   },
@@ -568,7 +568,7 @@
   },
   {
    "datum": "2026-11-24",
-   "snitt": 14.82
+   "snitt": 14.77
   }
  ]
 }
