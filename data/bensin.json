@@ -1,13 +1,13 @@
 {
- "uppdaterad": "2026-11-25T23:38+00:00",
+ "uppdaterad": "2026-11-26T15:10+00:00",
  "kalla": "bensinpriser.nu",
  "drivmedel": "95 (E10)",
  "orter": [
   "Norrköping",
   "Finspång"
  ],
- "snitt": 14.6,
- "median": 14.64,
+ "snitt": 14.7,
+ "median": 14.74,
  "lagst": {
   "id": "/station/ostergotlands-lan/norrkoping/simonstorp",
   "kedja": "Qstar",
@@ -18,7 +18,7 @@
   "lat": 58.788332,
   "lng": 16.1575091
  },
- "antal": 8,
+ "antal": 9,
  "stationer": [
   {
    "id": "/station/ostergotlands-lan/norrkoping/simonstorp",
@@ -31,51 +31,61 @@
    "lng": 16.1575091
   },
   {
-   "id": "/station/ostergotlands-lan/norrkoping/bergslagsvagen-18-skarblacka",
+   "id": "/station/ostergotlands-lan/finspang/ostermalmsvagen-25",
    "kedja": "St1",
-   "adress": "Bergslagsvägen 18 / Skärblacka",
-   "ort": "Norrköping",
-   "pris": 14.59,
+   "adress": "Östermalmsvägen 25",
+   "ort": "Finspång",
+   "pris": 14.74,
    "datum": "26/11-26",
-   "lat": 58.5814,
-   "lng": 15.9245
-  },
-  {
-   "id": "/station/ostergotlands-lan/norrkoping/bergslagsvagen-20-skarblacka",
-   "kedja": "St1",
-   "adress": "Bergslagsvägen 20, Skärblacka",
-   "ort": "Norrköping",
-   "pris": 14.59,
-   "datum": "26/11-26",
-   "lat": 58.5814,
-   "lng": 15.9245
+   "lat": 58.710633333333,
+   "lng": 15.787633333333
   },
   {
    "id": "/station/ostergotlands-lan/norrkoping/koppargatan-11",
    "kedja": "St1",
    "adress": "Koppargatan 11",
    "ort": "Norrköping",
-   "pris": 14.64,
+   "pris": 14.74,
    "datum": "26/11-26",
    "lat": 58.61615,
    "lng": 16.155533333333
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/bergslagsvagen-18-skarblacka",
+   "kedja": "St1",
+   "adress": "Bergslagsvägen 18 / Skärblacka",
+   "ort": "Norrköping",
+   "pris": 14.74,
+   "datum": "26/11-26",
+   "lat": 58.5814,
+   "lng": 15.9245
   },
   {
    "id": "/station/ostergotlands-lan/norrkoping/stockholmsvagen-34",
    "kedja": "St1",
    "adress": "Stockholmsvägen 34",
    "ort": "Norrköping",
-   "pris": 14.64,
+   "pris": 14.74,
    "datum": "26/11-26",
    "lat": 58.5982644,
    "lng": 16.1699515
+  },
+  {
+   "id": "/station/ostergotlands-lan/norrkoping/bergslagsvagen-20-skarblacka",
+   "kedja": "St1",
+   "adress": "Bergslagsvägen 20, Skärblacka",
+   "ort": "Norrköping",
+   "pris": 14.74,
+   "datum": "26/11-26",
+   "lat": 58.5814,
+   "lng": 15.9245
   },
   {
    "id": "/station/ostergotlands-lan/norrkoping/hagagatan-10-norrkoping",
    "kedja": "St1",
    "adress": "Hagagatan 10, Norrköping",
    "ort": "Norrköping",
-   "pris": 14.64,
+   "pris": 14.74,
    "datum": "26/11-26",
    "lat": 58.595655,
    "lng": 16.156304
@@ -85,20 +95,20 @@
    "kedja": "St1",
    "adress": "Boktryckaregatan 2, Norrköping",
    "ort": "Norrköping",
-   "pris": 14.64,
+   "pris": 14.74,
    "datum": "26/11-26",
    "lat": 58.605689,
    "lng": 16.174769
   },
   {
-   "id": "/station/ostergotlands-lan/finspang/ostermalmsvagen-25",
-   "kedja": "St1",
-   "adress": "Östermalmsvägen 25",
-   "ort": "Finspång",
-   "pris": 14.74,
+   "id": "/station/ostergotlands-lan/norrkoping/moa-martinsons-gata-6",
+   "kedja": "OKQ8",
+   "adress": "Moa Martinsons Gata 6",
+   "ort": "Norrköping",
+   "pris": 14.84,
    "datum": "26/11-26",
-   "lat": 58.710633333333,
-   "lng": 15.787633333333
+   "lat": 58.5811044,
+   "lng": 16.1344103
   },
   {
    "id": "/station/ostergotlands-lan/finspang/hallestad",
@@ -209,16 +219,6 @@
    "datum": "",
    "lat": 58.5884049,
    "lng": 16.2166991
-  },
-  {
-   "id": "/station/ostergotlands-lan/norrkoping/moa-martinsons-gata-6",
-   "kedja": "OKQ8",
-   "adress": "Moa Martinsons Gata 6",
-   "ort": "Norrköping",
-   "pris": null,
-   "datum": "",
-   "lat": 58.5811044,
-   "lng": 16.1344103
   },
   {
    "id": "/station/ostergotlands-lan/norrkoping/spargatan-3",
@@ -573,6 +573,10 @@
   {
    "datum": "2026-11-25",
    "snitt": 14.6
+  },
+  {
+   "datum": "2026-11-26",
+   "snitt": 14.7
   }
  ]
 }
