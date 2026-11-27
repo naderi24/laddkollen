@@ -1,5 +1,5 @@
 {
- "uppdaterad": "2026-11-26T23:53+00:00",
+ "uppdaterad": "2026-11-27T15:02+00:00",
  "kalla": "bensinpriser.nu",
  "drivmedel": "95 (E10)",
  "orter": [
@@ -576,6 +576,10 @@
   },
   {
    "datum": "2026-11-26",
+   "snitt": 14.7
+  },
+  {
+   "datum": "2026-11-27",
    "snitt": 14.7
   }
  ]
